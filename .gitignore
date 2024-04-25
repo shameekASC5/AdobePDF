@@ -1,0 +1,4 @@
+malintent/imgs/*
+malinent/logs/*
+__pycache__/
+ *.pyc
