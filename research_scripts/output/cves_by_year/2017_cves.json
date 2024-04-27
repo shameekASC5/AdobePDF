@@ -1,0 +1,138 @@
+{
+    "params": {
+        "version": "all",
+        "year": "2017"
+    },
+    "most recent year": 2017,
+    "oldest year": 2017,
+    "number of records": 215,
+    "number of vulnerabilities": 341,
+    "number of vulnerability types": 13,
+    "cves with multiple vulnerabilities": 152,
+    "count by vulnerability type": [
+        {
+            "name": "use after free",
+            "count": 30
+        },
+        {
+            "name": "out of bounds read",
+            "count": 6
+        },
+        {
+            "name": "heap based buffer overflow",
+            "count": 0
+        },
+        {
+            "name": "stack based buffer overflow",
+            "count": 1
+        },
+        {
+            "name": "heap overflow",
+            "count": 18
+        },
+        {
+            "name": "out of bounds write",
+            "count": 0
+        },
+        {
+            "name": "denial of service",
+            "count": 0
+        },
+        {
+            "name": "untrusted search path vulnerability",
+            "count": 0
+        },
+        {
+            "name": "arbitrary code execution",
+            "count": 152
+        },
+        {
+            "name": "crlf injection vulnerability",
+            "count": 0
+        },
+        {
+            "name": "double free vulnerability",
+            "count": 0
+        },
+        {
+            "name": "cross-site scripting",
+            "count": 0
+        },
+        {
+            "name": "xml external entity vulnerability",
+            "count": 0
+        },
+        {
+            "name": "format string vulnerability",
+            "count": 0
+        },
+        {
+            "name": "do not properly validate input",
+            "count": 0
+        },
+        {
+            "name": "uninitialized pointer vulnerability",
+            "count": 0
+        },
+        {
+            "name": "information disclosure vulnerability",
+            "count": 1
+        },
+        {
+            "name": "privilege escalation",
+            "count": 0
+        },
+        {
+            "name": "improper input validation",
+            "count": 0
+        },
+        {
+            "name": "disclosure of sensitive data vulnerability",
+            "count": 0
+        },
+        {
+            "name": "security bypass vulnerability",
+            "count": 7
+        },
+        {
+            "name": "race condition vulnerability",
+            "count": 0
+        },
+        {
+            "name": "invalid memory access vulnerability",
+            "count": 0
+        },
+        {
+            "name": "insecure library loading (dll hijacking) vulnerability",
+            "count": 0
+        },
+        {
+            "name": "memory address leak vulnerability",
+            "count": 12
+        },
+        {
+            "name": "integer overflow vulnerability",
+            "count": 2
+        },
+        {
+            "name": "NTLM SSO hash theft vulnerability",
+            "count": 0
+        },
+        {
+            "name": "memory corruption vulnerability",
+            "count": 82
+        },
+        {
+            "name": "sensitive data exposure",
+            "count": 26
+        },
+        {
+            "name": "buffer overflow",
+            "count": 3
+        },
+        {
+            "name": "other",
+            "count": 1
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+{
+    "params": {
+        "version": "all",
+        "year": "2019"
+    },
+    "most recent year": 2019,
+    "oldest year": 2019,
+    "number of records": 351,
+    "number of vulnerabilities": 517,
+    "number of vulnerability types": 12,
+    "cves with multiple vulnerabilities": 174,
+    "count by vulnerability type": [
+        {
+            "name": "use after free",
+            "count": 114
+        },
+        {
+            "name": "out of bounds read",
+            "count": 126
+        },
+        {
+            "name": "heap based buffer overflow",
+            "count": 0
+        },
+        {
+            "name": "stack based buffer overflow",
+            "count": 1
+        },
+        {
+            "name": "heap overflow",
+            "count": 17
+        },
+        {
+            "name": "out of bounds write",
+            "count": 35
+        },
+        {
+            "name": "denial of service",
+            "count": 0
+        },
+        {
+            "name": "untrusted search path vulnerability",
+            "count": 0
+        },
+        {
+            "name": "arbitrary code execution",
+            "count": 211
+        },
+        {
+            "name": "crlf injection vulnerability",
+            "count": 0
+        },
+        {
+            "name": "double free vulnerability",
+            "count": 3
+        },
+        {
+            "name": "cross-site scripting",
+            "count": 1
+        },
+        {
+            "name": "xml external entity vulnerability",
+            "count": 0
+        },
+        {
+            "name": "format string vulnerability",
+            "count": 0
+        },
+        {
+            "name": "do not properly validate input",
+            "count": 0
+        },
+        {
+            "name": "uninitialized pointer vulnerability",
+            "count": 0
+        },
+        {
+            "name": "information disclosure vulnerability",
+            "count": 0
+        },
+        {
+            "name": "privilege escalation",
+            "count": 2
+        },
+        {
+            "name": "improper input validation",
+            "count": 0
+        },
+        {
+            "name": "disclosure of sensitive data vulnerability",
+            "count": 0
+        },
+        {
+            "name": "security bypass vulnerability",
+            "count": 3
+        },
+        {
+            "name": "race condition vulnerability",
+            "count": 1
+        },
+        {
+            "name": "invalid memory access vulnerability",
+            "count": 0
+        },
+        {
+            "name": "insecure library loading (dll hijacking) vulnerability",
+            "count": 0
+        },
+        {
+            "name": "memory address leak vulnerability",
+            "count": 0
+        },
+        {
+            "name": "integer overflow vulnerability",
+            "count": 3
+        },
+        {
+            "name": "NTLM SSO hash theft vulnerability",
+            "count": 0
+        },
+        {
+            "name": "memory corruption vulnerability",
+            "count": 0
+        },
+        {
+            "name": "sensitive data exposure",
+            "count": 0
+        },
+        {
+            "name": "buffer overflow",
+            "count": 0
+        },
+        {
+            "name": "other",
+            "count": 0
+        }
+    ]
+}

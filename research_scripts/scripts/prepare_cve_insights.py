@@ -45,7 +45,7 @@ vulnerability_types = [
 def read_cves_from_csv():
     # read the csv file
     row_data = []
-    with open('adobe_reader_cves.csv', 'r') as file:
+    with open('../input/adobe_reader_cves.csv', 'r') as file:
         reader = csv.reader(file)
         # reader.writerow(fields) [includes the header]
         for row in reader:
@@ -157,5 +157,5 @@ def segment_cves_by_year_and_version(verbose=False):
 
 if __name__ == "__main__":
     transformed_data = segment_cves_by_year_and_version()       
-    save_to_csv(transformed_data, filename='segmented_adobe_reader_cves.csv')
+    save_to_csv(transformed_data, filename='../input/segmented_adobe_reader_cves.csv')
 

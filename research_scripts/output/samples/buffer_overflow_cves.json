@@ -1,0 +1,22 @@
+{
+    "params": {
+        "version": "all",
+        "year": "all"
+    },
+    "most recent year": 2017,
+    "oldest year": 1999,
+    "number of records": 91,
+    "number of vulnerabilities": 91,
+    "number of vulnerability types": 2,
+    "cves with multiple vulnerabilities": 88,
+    "count by vulnerability type": [
+        {
+            "name": "heap based buffer overflow",
+            "count": 45
+        },
+        {
+            "name": "buffer overflow",
+            "count": 46
+        }
+    ]
+}

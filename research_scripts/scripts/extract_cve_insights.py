@@ -6,23 +6,49 @@
 # software version, vulnerability type, year and other semantic info
 ##################################################################
 import csv
-from scrape_lineage import save_to_csv
-from prepare_cve_insights import vulnerability_types, segment_cves_by_year_and_version
+from prepare_cve_insights import segment_cves_by_year_and_version
 import re
 import json
-def read_cves_from_csv():
-    # read the csv file
-    row_data = []
-    with open('segmented_adobe_reader_cves.csv', 'r') as file:
-        reader = csv.reader(file)
-        # reader.writerow(fields) [includes the header]
-        for row in reader:
-            row_data.append(row) 
-        # remove header
-        del row_data[0]
-    return row_data
+
+vulnerability_types = [
+    "use after free", 
+    "out of bounds read", 
+    "heap based buffer overflow", 
+    "stack based buffer overflow",
+    "heap overflow",
+    "out of bounds write", 
+    "denial of service",
+    'untrusted search path vulnerability',
+    'arbitrary code execution',
+    'crlf injection vulnerability',
+    'double free vulnerability',
+    'cross-site scripting',
+    'xml external entity vulnerability',
+    'format string vulnerability',
+    "do not properly validate input",
+    "uninitialized pointer vulnerability",
+    "information disclosure vulnerability",
+    "privilege escalation",
+    "improper input validation",
+    "disclosure of sensitive data vulnerability",
+    "security bypass vulnerability",
+    "race condition vulnerability",
+    "invalid memory access vulnerability",
+    "insecure library loading (dll hijacking) vulnerability",
+    "memory address leak vulnerability",
+    "integer overflow vulnerability",
+    "NTLM SSO hash theft vulnerability",
+    "memory corruption vulnerability",
+    "sensitive data exposure", # seems to be code for buffer overflow in modern day
+    "buffer overflow", #keep this last, see part about avoiding double
+    "other"
+]
 
 def is_version_match(version_pattern, list_of_versions):
+    """
+    Returns the number of pattern matches for version_pattern
+    in list_of_versions. 
+    """
     total_length = 0
     for version in list_of_versions:
         matches = re.findall(version_pattern, version)
@@ -30,12 +56,30 @@ def is_version_match(version_pattern, list_of_versions):
     return total_length
 
 def is_vulnerability_in_list_of_vulns(vuln, list_vulns):
+    "Returns a boolean, indicating whether or not vuln string is in list_vulns."
     for vulnerability in list_vulns:
         if vuln == vulnerability:
             return True
     return False
 
 def find_cve_type_counts(row_data, cve_types, version= "all", year_match= "all", specific_vulnerabilities = [], all_versions_with_num=False):
+    """
+    Based on the provided row_data, and specific_vulnerabilities/version number/year, 
+    returns a dictionary of metrics on the CVEs that fit the search params.  
+    
+    Note: To get all the CVES for 8.X.X set year_match = "8" and all_versions_with_num=True
+    
+    Returns
+    "params": initial filters (version/year_match)
+    "most recent year": the most recent year found in all the records, 
+    "oldest year": the oldest recent year found in all the records, 
+    "number of records": the number of CVEs that matched search params,
+    "number of vulnerabilities": cumulative total vulnerabilities across all CVEs that fit this request,
+    "number of vulnerability types": the different vulnerability types found, as sourced from a preset list of 29,
+    "count by vulnerability type": a dictionary with keys for each vulnerability type and values of the number of CVEs 
+    it was found in,
+    "cves with multiple vulnerabilities": number of CVEs that cite multiple vulnerabilities from the list of 29.
+    """
     cve_type_counts = []
     total_vuln_types = 0
     num_vulns = 0
@@ -86,6 +130,7 @@ def find_cve_type_counts(row_data, cve_types, version= "all", year_match= "all",
             num_vulns += count
     min_year = 2025
     max_year = 1990
+    # loop through each row and count the total number of records and #of records with multiple vulnerabilites
     for row in row_data:
         year = row[0]
         reader_version = row[1]
@@ -120,8 +165,8 @@ def find_cve_type_counts(row_data, cve_types, version= "all", year_match= "all",
         "number of records": num_row_matches,
         "number of vulnerabilities": num_vulns,
         "number of vulnerability types": total_vuln_types,
-        "count by vulnerability type": cve_type_counts,
         "cves with multiple vulnerabilities": points_w_multiple_types, 
+        "count by vulnerability type": cve_type_counts,
         # "acrobat_only": acrobat_only_count, 
         # "reader only": reader_only_count,
         # "both": both_count,
@@ -130,7 +175,6 @@ def find_cve_type_counts(row_data, cve_types, version= "all", year_match= "all",
         
 if __name__ == "__main__":
     # Format: ["Year", "Reader Versions", "Types", "Name", "Description", "Adobe Reader", "Adobe Acrobat"]
-    # data = read_cves_from_csv()
     data = segment_cves_by_year_and_version()
     # remove header
     del data[0]
@@ -139,23 +183,34 @@ if __name__ == "__main__":
     start_year = 1999
     end_year = 2024
     cve_types = vulnerability_types.copy()
-    cve_types.append("other")
-    output = find_cve_type_counts(row_data=data, cve_types=cve_types)
-    # output = find_cve_type_counts(row_data=data, cve_types=cve_types, specific_vulnerabilities=["heap based buffer overflow", "buffer overflow"])
-    # returns data on the different cve types for all versions 9.XXX.XXX
-    # output = find_cve_type_counts(row_data=data, cve_types=cve_types, version="11", all_versions_with_num=True)
+    
+    print("...Running Unit Tests...")
+    # basic example
+    all_cves = find_cve_type_counts(row_data=data, cve_types=cve_types)
+    with open("../output/samples/all_cves.json", "w") as file:
+        json.dump(all_cves, file, indent=4)
+    print("All CVES done!")
+    
+    # specific cves 
+    buffer_overflow_cves = find_cve_type_counts(row_data=data, cve_types=cve_types, specific_vulnerabilities=["heap based buffer overflow", "buffer overflow"])
+    with open("../output/samples/buffer_overflow_cves.json", "w") as file:
+        json.dump(buffer_overflow_cves, file, indent=4)
+    print("Buffer overflow CVES done!")
 
-    # print(output)
-    with open("sample.json", "w") as file:
-        json.dump(output, file, indent=4)
-    # for each reader version, show the vulnerability types, should be similar as year 
-    # list comes from the traversal of each row
-    versions_to_check = []
+    # returns data on the different cve types for all versions 11.XXX.XXX
+    version11_cves = find_cve_type_counts(row_data=data, cve_types=cve_types, version="11", all_versions_with_num=True)
+    with open("../output/samples/adobe_v11.json", "w") as file:
+        json.dump(version11_cves, file, indent=4)
+    print("Adobe Reader v11 CVES done!")
+
+    cves_2010 = find_cve_type_counts(row_data=data, cve_types=cve_types, year_match="2010")
+    with open("../output/samples/2010_cves.json", "w") as file:
+        json.dump(cves_2010, file, indent=4)
+    print("2010 CVES done!")
+
     # for the heap based buffer overflow in particular, show the trend over the years
 
 
-
-    # save_to_csv(transformed_data, filename='segmented_adobe_reader_cves.csv')
         
 
 
