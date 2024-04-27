@@ -1,0 +1,6 @@
+%PDF-1.6
+trailer <</Root<<
+/Pages <<>>
+/OpenAction <<
+/S /JavaScript
+/JS (app.alert({cMsg: 'Hello World!'});)>>

