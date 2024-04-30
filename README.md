@@ -19,4 +19,3 @@ Run pip install -r requirements.txt to fetch the dependencies for the selenium w
 2. ```prepare_cve_insights.py```: examines each CVE in the csv file, updating the csv to include year of report, affected software versions and the types of vulnerabilities reported in the CVE. 
 3. ```extract_cve_insights.py```: uses the updated csv file with year, version and vulnerability type information to build JSON files with a filtered subset of the CVEs. Allows for search by affected year, version or vulnerability types.
 4. ```quick_extract.py```: uses the extract script to source data for all CVEs by year. Produces 25 JSON files, on for each year. Used it to build the graph below after combining the data into a list.
-```
