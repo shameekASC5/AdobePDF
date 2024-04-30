@@ -1,7 +1,6 @@
 # Producing PDF Malware: A Wakeup Call to the Masses
 
-Disclaimer: This production is for research purposes only! Please do not use any of this code for
-malicious purposes.
+Disclaimer: This production is for research purposes only! Please do not use any of this code for malicious purposes. This repository includes potentially malicious files. In their current state, the PDF documents are harmless, but it would be trivial to update them to implement the same attacks. The malicious python scripts can also be weaponized, but are harmless on their own. Please read the included paper for further details about implementation.
 
 Paper Summary (Claude AI): This project aims to reproduce known vulnerabilities in Adobe Reader version 9.0 and test obfuscation techniques against antivirus software. Specifically, it creates a malicious PDF file that exploits CVE-2010-1242 to launch a reverse shell, and another PDF that uses a heap spray attack. The malware payloads include a keylogger and a program to take webcam screenshots. The project obfuscates the malware using techniques like encoding and JavaScript functions, and then tests the detection rates of 63 antivirus programs on VirusTotal against the plain and obfuscated versions. It also compares the malware to existing Metasploit exploits targeting the same vulnerabilities.
 
